@@ -1,0 +1,265 @@
+.logo{
+    padding: 0px;
+
+    position: relative;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 20px;
+}
+
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    color: rgba(10, 56, 113, 1);
+}
+*:-moz-placeholder {
+    /* Firefox anterior a 19 */
+    color: rgba(10, 56, 113, 1);
+}
+*::-moz-placeholder {
+    /* Firefox 19 y superior */
+    color: rgba(10, 56, 113, 1);
+}
+*:-ms-input-placeholder {
+    /* Internet Explorer 10 y superior */
+    color: rgba(10, 56, 113, 1);
+}
+
+.textoAEncriptar{
+    position: relative;
+    display: inline-block;
+    padding-left: 5%;
+    width: 65%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#caja-texto-encriptar{
+    width: 90%;
+    height: 575px;
+    /*estilo*/
+    border: none;
+    outline: none;   
+    background-color: transparent; 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    resize: none;
+}
+
+.regla{
+    margin: 2%;
+    width: auto;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+
+#encriptar{
+    background: #0A3871;
+    border: none;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+
+    /*letra*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#desencriptar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+
+    /*letra*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+}
+
+
+.rectangulo{
+    margin-right: 5%;
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    height: 85%;
+    padding: 20px;
+    /*estilo*/
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#resultado{
+    width: 100%;
+    height: 30em;
+    resize: none;
+    border: none;
+    outline: none;
+    /*estilo*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+}
+
+
+.frente{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    margin-top: 30%;
+    margin-left: 6%;
+}
+
+#ningun{
+    width: 90%;
+    height: 58px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    /*letra*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+#ingresa{
+    width: 90%;
+    height: 48px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    /*letra*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+#copiar{
+    width: 100%;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin: auto;
+    margin-top: 5%;
+    /*letra*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #0A3871;
+}
+
+.atras{
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+    .textoAEncriptar{
+        margin-left: 2%;
+        padding: 0%;
+    }
+
+
+    #caja-texto-encriptar{
+        margin-top: 10%;
+        margin-left: 5%;
+        height: 280px;
+        width: auto;
+    }
+    .regla{
+        width: 100%;
+    }
+
+    #encriptar{
+        margin: 5%;
+        margin-top: 3%;
+    }
+    #desencriptar{
+        margin: 5%;
+        margin-top: 5%;
+
+    }
+    .rectangulo{
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        position: inherit;
+        width: 70%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 32px;
+    }
+    .frente{
+        position: relative;
+        margin-top: 5%;
+        margin-left: 0%;
+        width: 90%;
+        flex:none;
+        order: 1;
+        align-self: center;
+        flex-grow: 0;
+    }
+
+    #muñeco{
+        display: none;
+    }
+    #resultado{
+        height: 200px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    #copiar{
+        height: 67px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+
+    }
+
+}

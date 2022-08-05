@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+    </style>  
+</head>
+
+<body style="background-color: #F3F5FC;">
+
+    <header>
+        <div class="logo">
+            <h1><img src="/Users/sebap/Desktop/Alura/Challenges/Encriptador/Imagenes/Logo.png" alt="Logo Alura"></h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="textoAEncriptar">
+            <textarea id="caja-texto-encriptar" placeholder="Ingrese aquí su texto"></textarea>
+            <div class="regla">
+                <h6><img id="adv" src="/Users/sebap/Desktop/Alura/Challenges/Encriptador/Imagenes/adv.jpg"> Solo letras minúsculas, sin acentuación</h6>
+            </div>
+            <div class="botones">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>    
+        </section>
+
+        <section class="rectangulo">
+            <div class="frente">
+                <img id="muñeco" src="/Users/sebap/Desktop/Alura/Challenges/Encriptador/Imagenes/Muñeco.png" alt="Muñeco">
+                <p id="ningun">Ningún mensaje fue encontrado</p>
+                <p id="ingresa">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="atras">
+                <textarea type="text" id="resultado" readonly="yes"></textarea>
+                <button id="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="encriptar2.js"></script>
+    <script src="copiar.js"></script>
+    <script src="desencriptar.js"></script>
+
+</body>
